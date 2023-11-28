@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Bem-vindo ao Movie Catalog API! Esta é uma aplicação Node.js desenvolvida usando o framework Nest.js, que fornece uma API RESTful para gerenciar um catálogo de filmes. A autenticação é baseada em JSON Web Tokens (JWT), e o sistema utiliza PostgreSQL como banco de dados principal e Redis para caching.
+Bem-vindo ao Movie Catalog API! Esta é uma aplicação Node.js desenvolvida usando o framework Nest.js, que fornece uma API RESTful para gerenciar um catálogo de filmes. A autenticação é baseada em JSON Web Tokens (JWT), e o sistema utiliza PostgreSQL como banco de dados principal e Redis para caching, além disso uso o TypeORM para manipular o banco de dados postgres, e por fim realizei o deploy da aplicação na AWS.
 
 ## Requisitos
 
