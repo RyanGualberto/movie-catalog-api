@@ -20,6 +20,8 @@ import { UpdateMovieDto } from './dto/update-movie.dto';
 
 // guards
 import { AuthGuard } from '../auth/auth.guard';
+
+// swagger
 import {
   ApiBearerAuth,
   ApiNotFoundResponse,
@@ -41,7 +43,7 @@ export class MoviesController {
   })
   @Post()
   async create(@Body() createMovieDto: CreateMovieDto) {
-    return this.moviesService.create(createMovieDto);
+    return await this.moviesService.create(createMovieDto);
   }
 
   @ApiResponse({
@@ -51,7 +53,7 @@ export class MoviesController {
   })
   @Get()
   async findAll() {
-    return this.moviesService.findAll();
+    return await this.moviesService.findAll();
   }
 
   @ApiResponse({
@@ -65,7 +67,7 @@ export class MoviesController {
   })
   @Get(':id')
   async findOne(@Param('id') id: string) {
-    return await this.moviesService.findOne(+id);
+    return await this.moviesService.findOneOrFail(+id);
   }
 
   @ApiResponse({
