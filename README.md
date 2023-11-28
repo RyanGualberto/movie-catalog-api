@@ -50,7 +50,7 @@ Acesse a documentação da API utilizando o Swagger:
 
 **Ryan Gualberto**
 - LinkedIn: [Ryan Gualberto](https://www.linkedin.com/in/ryan-gualberto)
-- GitHub: [seu-usuario](https://github.com/ryangualberto)
+- GitHub: [Ryan Gualberto](https://github.com/ryangualberto)
 
 ## Licença
 
