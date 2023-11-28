@@ -8,12 +8,12 @@ Bem-vindo ao Movie Catalog API! Esta é uma aplicação Node.js desenvolvida usa
 
 Para executar esta aplicação localmente, certifique-se de ter as seguintes ferramentas instaladas:
 
-- Nest.js
-- TypeORM
-- Docker
-- PostgreSQL
-- Redis
-- AWS EC2
+- Nest.js - Framework Node.js para construir aplicações server-side eficientes e escaláveis. [6 meses]
+- TypeORM - ORM baseado em TypeScript focado em suporte a bancos de dados relacionais. [Primeira experiência]
+- Docker - Plataforma para desenvolvimento, provisionamento e execução de aplicações utilizando containers. [1 ano estudando e utilizando]
+- PostgreSQL - Sistema de gerenciamento de banco de dados relacional de código aberto. [1 ano e 6 meses estudando e utilizando]
+- Redis - Banco de dados de estrutura de dados em memória de código aberto. [8 meses estudando e utilizando]
+- AWS EC2 - Serviço de computação em nuvem que fornece capacidade de computação redimensionável na nuvem. [4 meses estudando e utilizando]
 
 ## Configuração do Ambiente
 
