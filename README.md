@@ -13,6 +13,7 @@ Para executar esta aplicação localmente, certifique-se de ter as seguintes fer
 - Docker
 - PostgreSQL
 - Redis
+- AWS EC2
 
 ## Configuração do Ambiente
 
