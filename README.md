@@ -37,7 +37,7 @@ A aplicação estará disponível em `http://localhost:3000`.
 
 Acesse a documentação da API utilizando o Swagger:
 
-- [Swagger Documentation](http://54.90.209.69:3000/api)
+- [Swagger Documentation](http://54.90.209.69:3000/docs)
 
 ## Funcionalidades
 
