@@ -1,6 +1,7 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import * as dotenv from 'dotenv';
 import { dirname } from 'path';
+import * as redisStore from 'cache-manager-redis-store';
 dotenv.config();
 
 class ConfigService {
@@ -38,6 +39,32 @@ class ConfigService {
       synchronize: true,
     };
   }
+
+  public getJwtConfig() {
+    return {
+      global: true,
+      useFactory: () => ({
+        secret: this.getValue('JWT_SECRET'),
+        signOptions: {
+          expiresIn: this.getValue('JWT_EXPIRATION_TIME'),
+        },
+      }),
+    };
+  }
+
+  public getRedisConfig(): {
+    isGlobal: boolean;
+    store: typeof redisStore;
+    host: string;
+    port: number;
+  } {
+    return {
+      isGlobal: true,
+      store: redisStore,
+      host: this.getValue('REDIS_HOST'),
+      port: parseInt(this.getValue('REDIS_PORT')),
+    };
+  }
 }
 
 const configService = new ConfigService(process.env).ensureValues([
@@ -46,6 +73,10 @@ const configService = new ConfigService(process.env).ensureValues([
   'POSTGRES_USER',
   'POSTGRES_PASSWORD',
   'POSTGRES_DATABASE',
+  'JWT_SECRET',
+  'JWT_EXPIRATION_TIME',
+  'REDIS_HOST',
+  'REDIS_PORT',
 ]);
 
 export { configService };
