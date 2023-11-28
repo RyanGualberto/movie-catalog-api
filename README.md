@@ -45,16 +45,6 @@ Acesse a documentação da API utilizando o Swagger:
 
 2. **CRUD do Catálogo de Filmes:** Gerencie o catálogo de filmes com operações CRUD.
 
-## Contribuição
-
-Se deseja contribuir para este projeto, siga os passos abaixo:
-
-1. Faça um fork do repositório.
-2. Crie uma branch para a sua contribuição: `git checkout -b feature/sua-feature`.
-3. Commit suas alterações: `git commit -m 'Adiciona nova funcionalidade'`.
-4. Faça o push para a branch: `git push origin feature/sua-feature`.
-5. Abra um Pull Request.
-
 ## Autor
 
 **Ryan Gualberto**
